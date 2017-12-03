@@ -1,0 +1,45 @@
+/*
+ * Sidebar
+ */
+
+.sidebar {
+	position: fixed;
+	top: 72px;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	padding: 20px 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #2d3535;
+
+	&-nav {
+		margin: 40px 10px;
+
+		&__item {
+			padding: 20px 0;
+			border-bottom: 1px solid #3b4444;
+
+			&--heading {
+				padding-bottom: 7px;
+				color: $white;
+				font-weight: bold;
+			}
+		}
+
+		&__link {
+			color: $white;
+			font-weight: bold;
+
+			&:hover {
+				color: $pink;
+				text-decoration: none;
+			}
+		}
+
+		&__img {
+			display: inline-block;
+			padding-right: 10px;
+		}
+	}
+}

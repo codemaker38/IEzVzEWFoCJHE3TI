@@ -1,0 +1,62 @@
+/**
+ * General
+ */
+body {
+	padding-top: 72px;
+}
+
+.border {
+	display: block;
+
+	&-rounded {
+		border-radius: 7px;
+	}
+
+	&-circle {
+		border-radius: 50%;
+	}
+
+	&-shadow {
+		box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+	}
+
+	&-color-primary {
+		border: 1px solid $primary;
+	}
+
+	&-bottom {
+		&:after {
+			display: block;
+			content: '';
+			width: 100%;
+			margin: $grid-gutter-width / 2;
+			border-top: 1px solid $hr-border-color;
+		}
+
+		&--block {
+			&:after {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.gallery {
+	display: flex;
+	flex-flow: row wrap;
+	margin: auto -0.5vw;
+
+	&-item {
+		flex: auto;
+		width: 200px;
+		margin: .5vw;
+	}
+}
+
+.text {
+	&-xl {
+		font-size: 5rem;
+		font-weight: 600;
+	}
+}
